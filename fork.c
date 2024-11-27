@@ -25,7 +25,7 @@ int main() {
     wait(&status);
     if (WIFEXITED(status)) {
       int exit_status = WEXITSTATUS(status);
-      printf("Child slept for %d", exit_status);
+      printf(" Child slept for %dsec\n", exit_status);
     }
   }
   return 0;
